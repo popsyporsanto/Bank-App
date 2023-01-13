@@ -96,6 +96,6 @@ public class HDFCUser implements BankInterface{
     @Override
     public double calculateInterest(int years) {
 
-        return (balance+years+rateOfInterest)/100;
+        return (balance*years*rateOfInterest)/100;
     }
 }
